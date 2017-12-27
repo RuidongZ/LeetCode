@@ -38,8 +38,3 @@ def isContainZero(num):
         return True
     else:
         return False
-
-if __name__ == '__main__':
-    sol = Solution()
-    ans = sol.selfDividingNumbers(1, 22)
-    print(ans)
