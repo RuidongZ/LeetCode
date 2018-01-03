@@ -66,5 +66,3 @@ class Solution(object):
                         break
                 ans += 1
         '''
-sol = Solution()
-ans = sol.countBinarySubstrings("00110")
