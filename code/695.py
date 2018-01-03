@@ -23,23 +23,20 @@
 # Note: The length of each dimension in the given grid does not exceed 50.
 
 class Solution(object):
-    tmpgrid = None
     def maxAreaOfIsland(self, grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        self.tmpgrid = grid
         ans = 0
         tmp = 0
-        for i in range(len(self.tmpgrid)):
-            for j in range(len(self.tmpgrid[i])):
-                if self.tmpgrid[i][j] == 1:
-                    tmp += self.dfs(self.tmpgrid, i, j)
+        for i in range(len(grid)):
+            for j in range(len(grid[i])):
+                if grid[i][j] == 1:
+                    tmp += self.dfs(grid, i, j)
                     ans = max(ans, tmp)
                     tmp = 0
         return ans
-
 
     def dfs(self, grid, i, j):
         ans = 1
