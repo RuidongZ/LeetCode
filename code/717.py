@@ -31,13 +31,13 @@ class Solution(object):
         :type bits: List[int]
         :rtype: bool
         """
-        '''
+        """
         # Better Solution
         i = len(bits) - 2
         while i >= 0 and bits[i] == 1:
             i -= 1
         return (len(bits) - i)% 2 ==0
-        '''
+        """
         i = 0
         ans = None
         while i < len(bits):
