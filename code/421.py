@@ -25,7 +25,7 @@ class Solution(object):
         """
         ans = 0
         mask = 0
-        for i in range(4, -1, -1):
+        for i in range(31, -1, -1):
             mask |= (1 << i)
             s = set()
             for num in nums:
