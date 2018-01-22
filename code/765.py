@@ -45,9 +45,7 @@ class Solution(object):
                 j = i + 2
                 while j < len(row):
                     if row[j] == target:
-                        tmp = row[i+1]
-                        row[i+1] = row[j]
-                        row[j] = tmp
+                        row[i+1], row[j] = row[j], row[i+1]
                         ans += 1
                         break
                     j += 1
