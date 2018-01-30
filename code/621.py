@@ -29,4 +29,4 @@ class Solution(object):
             idx[ord(i) - ord('A')] += 1
         maxNum = max(idx)
         cntMax = idx.count(maxNum)
-        return max(len(tasks), (maxNum-1)*(n+1)-25-cntMax)
+        return max(len(tasks), (maxNum-1)*(n+1)+cntMax)
