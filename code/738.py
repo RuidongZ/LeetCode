@@ -44,7 +44,3 @@ class Solution(object):
                 return int("".join(ans))
         ans.append(s[-1])
         return int("".join(ans))
-
-sol = Solution()
-ans = sol.monotoneIncreasingDigits(10)
-print(ans)
