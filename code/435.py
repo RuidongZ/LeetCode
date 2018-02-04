@@ -39,7 +39,7 @@ class Solution(object):
         """
         interv = []
         for i in intervals:
-            interv.append([i[0], i[1]])
+            interv.append([i.start, i.end])
         interv = sorted(interv, key=lambda x: (x[1]))
 
         ans = 0
